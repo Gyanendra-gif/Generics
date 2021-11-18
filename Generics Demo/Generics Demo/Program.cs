@@ -30,6 +30,14 @@ namespace Generics_Demo
                         Console.WriteLine("Max Number is: " + result);
                         break;
                     case 3:
+                        Console.WriteLine("Enter Three Float Numbers to Check Max.");
+                        String firstString = Convert.ToString(Console.ReadLine());
+                        String secondString = Convert.ToString(Console.ReadLine());
+                        String thirdString = Convert.ToString(Console.ReadLine());
+                        String res = MaximumComputation.MaximumString(firstString, secondString, thirdString);
+                        Console.WriteLine("Max Number is: " + res);
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
