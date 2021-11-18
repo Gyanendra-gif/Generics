@@ -21,6 +21,17 @@ namespace Generics_Demo
                         int outPut = MaximumComputation.MaxNumber(firstNum, secondNum, thirdNum);
                         Console.WriteLine("Max Number is: "+outPut);
                         break;
+                   case 2:
+                        Console.WriteLine("Enter Three Float Numbers to Check Max.");
+                        double firstNumb = Convert.ToDouble(Console.ReadLine());
+                        double secondNumb = Convert.ToDouble(Console.ReadLine());
+                        double thirdNumb = Convert.ToDouble(Console.ReadLine());
+                        double result = MaximumComputation.MaximumNumber(firstNumb, secondNumb, thirdNumb);
+                        Console.WriteLine("Max Number is: " + result);
+                        break;
+                    case 3:
+                        flag = false;
+                        break;
                 }
             }
         }

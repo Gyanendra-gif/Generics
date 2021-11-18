@@ -21,5 +21,20 @@ namespace Generics_Demo
                 return thirdNum;
             }
         }
+        public static double MaximumNumber(double firstNumb, double secondNumb, double thirdNumb)
+        {
+            if (firstNumb.CompareTo(secondNumb) > 0 && firstNumb > thirdNumb)
+            {
+                return firstNumb;
+            }
+            if (secondNumb.CompareTo(firstNumb) > 0 && secondNumb > thirdNumb)
+            {
+                return secondNumb;
+            }
+            else
+            {
+                return thirdNumb;
+            }
+        }
     }
 }
