@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Generics_Demo
 {
-    class MaximumComputation
+    class MaximumComputation 
     {
         public static int MaxNumber(int firstNum, int secondNum, int thirdNum)
         {
@@ -50,6 +50,20 @@ namespace Generics_Demo
             {
                 return thirdString;
             }
+        }
+
+    }
+    public class FindMaxGenric <T> 
+    {
+        public static string FindMaximum<T>(T firstPlace, T secondPlace, T thirdPlace) where T : IComparable<T>
+        {
+            if (firstPlace.CompareTo(secondPlace) > 0 && firstPlace.CompareTo(thirdPlace) > 0)
+                return firstPlace.ToString();
+            else if (secondPlace.CompareTo(firstPlace) > 0 && secondPlace.CompareTo(thirdPlace) > 0)
+                return secondPlace.ToString();
+            else if (thirdPlace.CompareTo(firstPlace) > 0 && thirdPlace.CompareTo(secondPlace) > 0)
+                return thirdPlace.ToString();
+            else throw new Exception("Values are same");
         }
     }
 }
